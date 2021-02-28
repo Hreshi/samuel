@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>samuel miller's small pp</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/smallpp.css' %}">
+</head>
+
+<body>
+	<div align="center">
+		<img src= "{%static 'img/pc.jpg'%}">
+	</div>
+	<div align="center">
+		<form id="rounds" align="center" action="" method="POST">
+		{% csrf_token %}
+		<p>ROUND :    {{ROUND_NUM}}</p>
+		<button>NEXT ROUND</button>
+		</form>
+	</div>
+</body>
+<footer>
+		<div align="center">
+			<p>MADE WITH FINGERS BY HRESHI ON A <br>AMD DUAL-CORE E1-6010 CPU(1.35)GHz<br>4GB DDR3 MEMORY<br>1000GB HDD<br>15 YEAR OLD LAPTOP</p>
+		</div>
+</footer>
+</html>

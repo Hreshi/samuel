@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+body {
+	font-family: "Fira Code" monospace;
+}
+img {
+	width: 70%;
+	height: 70%;
+
+}
+button {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #ffffff;
+	width: 100px;
+	height: 40px;
+	font-weight: bold;
+	text-decoration: none;
+	border: none;
+	background-color: #26af07;
+	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 2%;
+}
+footer {
+	background-color: #1e1e1e;
+	color: #2e2e2e;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 100px 10px;
+}

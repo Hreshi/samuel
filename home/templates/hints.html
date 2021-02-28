@@ -1,0 +1,26 @@
+<!-- DECODE THIS PASSWORD, SPACE MATTERS-->
+<!-- -+-+ ''''$((.-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hints</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/hints.css' %}">
+</head>
+<body>
+	<h1 align="center">HINTS ARE HERE</h1>
+	<div align="center">
+
+		{% for hint in hints %}
+			<div id="hints">
+				<p>{{ hint }}</p>
+			</div>
+		{% endfor %}
+
+		<form action="" method="POST">
+			{% csrf_token %}
+			<button>NEXT HINT</button>
+		</form>
+	</div>
+</body>
+</html>
