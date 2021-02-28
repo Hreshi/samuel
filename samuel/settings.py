@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'nx5xz8u&3$ev$jp&&r+wbv_)01t-ejzk(+e4p@k(gzpz26n!-6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['samuelmiller.heroku.com', '127.0.0.1']
 
 
 # Application definition
@@ -124,3 +124,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'assets')
 ]
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATIC_ROOT = os.path.join(BASE_DIR, ‘static’)
